@@ -1,120 +1,3 @@
-/* Global styles */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-/* Header Styles */
-header {
-    background-color: #333;
-    padding: 10px 20px;
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.nav-links {
-    list-style-type: none;
-    display: flex;
-}
-
-.nav-links li {
-    margin: 0 15px;
-}
-
-.nav-links a {
-    color: white;
-    text-decoration: none;
-}
-
-/* Our Services Section */
-#services {
-    padding: 40px 20px;
-    background-color: #f4f4f4;
-}
-
-.container.services-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 20px;
-}
-
-.service-card {
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 48%; /* Adjust width for responsiveness */
-    text-align: center;
-}
-
-.service-card img {
-    width: 100%;
-    border-radius: 8px;
-}
-
-.service-card h3 {
-    margin-top: 20px;
-    font-size: 1.5em;
-}
-
-.service-card p {
-    margin: 10px 0;
-}
-
-.service-card ul {
-    list-style-type: disc;
-    margin-left: 20px;
-    text-align: left;
-}
-
-/* Footer Section */
-footer {
-    background-color: #333;
-    color: white;
-    padding: 40px 20px;
-}
-
-.footer-container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 40px;
-}
-
-.footer-section {
-    flex: 1;
-    min-width: 250px;
-}
-
-.social-icons {
-    list-style-type: none;
-    display: flex;
-    gap: 15px;
-}
-
-.social-icons li {
-    display: inline;
-}
-
-.social-icons img {
-    width: 30px;
-    height: auto;
-}
-
-/* Footer Bottom Section */
-.footer-bottom {
-    text-align: center;
-    margin-top: 20px;
-    background-color: #222;
-    padding: 10px 0;
-}
-
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -143,71 +26,72 @@ footer {
             <div class="service-card">
                 <img src="images/Gazetech2.jpg" alt="Smart Bandages">
                 <h3>GazeTech: A Revolution in Wound Monitoring</h3>
-                <p>
-                    GazeTech is an intelligent bandage that represents a groundbreaking medical innovation 
-                    designed to improve the monitoring of post-operative, chronic, or severe wounds. 
-                    Equipped with embedded technologies and integrated sensors, this device continuously monitors 
-                    key indicators such as temperature, humidity, or pH to quickly detect signs of infection.
-                </p>
-                <p>
-                    The collected data is transmitted to a dedicated mobile application, offering precise and 
-                    personalized tracking for each patient. This connected approach enables healthcare professionals 
-                    and patients to respond quickly, thereby reducing the risk of complications and optimizing the 
-                    healing process.
-                </p>
-                <ul>
-                    <li>Early detection of infections, allowing for timely intervention.</li>
-                    <li>Enhanced patient comfort by reducing unnecessary medical visits.</li>
-                    <li>Accelerated healing process, leading to shorter recovery times and better management of 
-                        complex wounds.
-                    </li>
-                </ul>
+                <div class="service-card-content">
+                    <p>
+                        GazeTech is an intelligent bandage that represents a groundbreaking medical innovation 
+                        designed to improve the monitoring of post-operative, chronic, or severe wounds. 
+                        Equipped with embedded technologies and integrated sensors, this device continuously monitors 
+                        key indicators such as temperature, humidity, or pH to quickly detect signs of infection.
+                    </p>
+                    <p>
+                        The collected data is transmitted to a dedicated mobile application, offering precise and 
+                        personalized tracking for each patient. This connected approach enables healthcare professionals 
+                        and patients to respond quickly, thereby reducing the risk of complications and optimizing the 
+                        healing process.
+                    </p>
+                    <ul>
+                        <li>Early detection of infections, allowing for timely intervention.</li>
+                        <li>Enhanced patient comfort by reducing unnecessary medical visits.</li>
+                        <li>Accelerated healing process, leading to shorter recovery times and better management of 
+                            complex wounds.</li>
+                    </ul>
+                </div>
             </div>
 
             <!-- Second Service Card -->
             <div class="service-card">
                 <img src="images/gazetech.jpg" alt="Telemedicine Solutions">
                 <h3>GazeTech: A Vision for the Future</h3>
-                <p>
-                    GazeTech is much more than a current solution for wound monitoring; it paves the way for 
-                    revolutionary advancements in connected medicine. By integrating increasingly advanced sensors 
-                    and technologies like artificial intelligence (AI), this device has the potential to evolve and 
-                    provide even more precise and predictive wound care.
-                </p>
-                <p>
-                    In the near future, these bandages could:
-                </p>
-                <ul>
-                    <li>Predict complications through advanced analysis of collected data, enabling intervention 
-                        even before visible signs of infection appear.
-                    </li>
-                    <li>Adapt to each patient by offering personalized treatments based on their biological 
-                        characteristics and medical history.
-                    </li>
-                    <li>Release active treatments: For instance, by incorporating reservoirs of medication or 
-                        antibiotics, the bandage could deliver precise doses in response to detected infection or 
-                        inflammation.
-                    </li>
-                    <li>Integrate with medical ecosystems: Smart bandages could connect to hospital systems, 
-                        transmitting real-time data to healthcare professionals for remote monitoring and optimized 
-                        decision-making.
-                    </li>
-                </ul>
-                <p>
-                    GazeTech is a first step toward connected and proactive medicine, where technology and healthcare 
-                    unite to create a safer, faster, and more effective future.
-                </p>
+                <div class="service-card-content">
+                    <p>
+                        GazeTech is much more than a current solution for wound monitoring; it paves the way for 
+                        revolutionary advancements in connected medicine. By integrating increasingly advanced sensors 
+                        and technologies like artificial intelligence (AI), this device has the potential to evolve and 
+                        provide even more precise and predictive wound care.
+                    </p>
+                    <p>
+                        In the near future, these bandages could:
+                    </p>
+                    <ul>
+                        <li>Predict complications through advanced analysis of collected data, enabling intervention 
+                            even before visible signs of infection appear.</li>
+                        <li>Adapt to each patient by offering personalized treatments based on their biological 
+                            characteristics and medical history.</li>
+                        <li>Release active treatments: For instance, by incorporating reservoirs of medication or 
+                            antibiotics, the bandage could deliver precise doses in response to detected infection or 
+                            inflammation.</li>
+                        <li>Integrate with medical ecosystems: Smart bandages could connect to hospital systems, 
+                            transmitting real-time data to healthcare professionals for remote monitoring and optimized 
+                            decision-making.</li>
+                    </ul>
+                    <p>
+                        GazeTech is a first step toward connected and proactive medicine, where technology and healthcare 
+                        unite to create a safer, faster, and more effective future.
+                    </p>
+                </div>
             </div>
         </div>
         <div class="service-card">
             <img src="images/Gazetech2.jpg" alt="Smart Bandages">
             <h3>Gazetech Wins First Prize</h3>
-            <p>
-                Gazetech, our groundbreaking smart bandage, proudly secured first place in the prestigious 
-                Injez Competition at the Higher Institute of Medical Technology of Tunis. 
-                This achievement highlights its innovative approach to infection detection and reinforces our commitment 
-                to transforming healthcare through advanced technology.
-            </p>
+            <div class="service-card-content">
+                <p>
+                    Gazetech, our groundbreaking smart bandage, proudly secured first place in the prestigious 
+                    Injez Competition at the Higher Institute of Medical Technology of Tunis. 
+                    This achievement highlights its innovative approach to infection detection and reinforces our commitment 
+                    to transforming healthcare through advanced technology.
+                </p>
+            </div>
         </div>
     </div>
 </section>
